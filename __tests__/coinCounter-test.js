@@ -1,4 +1,4 @@
-// import { CountCounter } from "../src/main"
+import { getQuarter } from "../src/main.js"
 
 describe("CoinCounter", () => {
 
@@ -10,6 +10,10 @@ describe("CoinCounter", () => {
   test('should verify if input is not blank', () => {
     const input = parseInt("");
     expect(input).toEqual(NaN);
+  })
+
+  test('should return 4 quarters for a dollar', () => {
+    expect(getQuarter(1)).toEqual(4);
   })
 
 })
