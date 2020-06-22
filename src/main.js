@@ -59,7 +59,7 @@ export const coinCounter = (money, moneyArray = [0, 0, 0, 0]) => {
     val[1] = 2;
   } else {
     val[0] = .01;
-    val[1] = 3;3
+    val[1] = 3;
   }
   money -= val[0];
   moneyArray[val[1]] += 1;
