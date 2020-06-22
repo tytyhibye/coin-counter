@@ -25,4 +25,12 @@ describe("CoinCounter", () => {
    expect(getDime(1)).toEqual(10);
   })
 
+  test('should return 20 nickels for a dollar', () => {
+    expect(getNickel(1)).toEqual(20);
+   })
+
+   test('should return 100 pennies for a dollar', () => {
+    expect(getPenny(1)).toEqual(100);
+   })
+
 })
